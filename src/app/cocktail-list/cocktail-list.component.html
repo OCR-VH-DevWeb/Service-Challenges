@@ -1,0 +1,11 @@
+<h1>Cocktail List</h1>
+
+<ul>
+  @for(cocktail of cocktails; track cocktail ){
+  <li>
+    <h2>{{ cocktail.name }}</h2>
+    <p>{{ cocktail.price }}</p>
+    <img [src]="cocktail.image" alt="{{ cocktail.name }}" />
+  </li>
+  }
+</ul>
